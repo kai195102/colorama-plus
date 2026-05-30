@@ -11,3 +11,5 @@ virtualenv
 
 # PyCharm
 .idea
+
+colorama-plus/
